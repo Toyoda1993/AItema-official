@@ -728,15 +728,134 @@ ul { list-style: none; }
 }
 .problem-card p strong { color: var(--col-text-primary); }
 
-/* Paradigm Shift */
-.paradigm-shift {
+/* ---- Rich Problem Cards (事例別3枚カード) ---- */
+.problem-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.problem-card-rich {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
   background: var(--grad-card);
   border: 1px solid var(--col-border);
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.problem-card-rich::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-primary);
+  opacity: 0;
+  transition: var(--transition-base);
+  z-index: 1;
+}
+
+.problem-card-rich:hover {
+  border-color: var(--col-border-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 32px rgba(79,142,247,0.08);
+  background: rgba(255,255,255,0.045);
+}
+.problem-card-rich:hover::before { opacity: 1; }
+
+/* SVGイメージエリア */
+.problem-image {
+  width: 100%;
+  background: rgba(255,255,255,0.015);
+  border-bottom: 1px solid var(--col-border);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.problem-image svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* カード本文エリア */
+.problem-card-body {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+/* 事例番号タグ */
+.problem-case-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--col-blue);
+  background: rgba(79,142,247,0.1);
+  border: 1px solid rgba(79,142,247,0.25);
+  padding: 4px 12px;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+.problem-case-tag-purple {
+  color: var(--col-purple);
+  background: rgba(139,92,246,0.1);
+  border-color: rgba(139,92,246,0.25);
+}
+
+.problem-case-tag-teal {
+  color: var(--col-teal);
+  background: rgba(6,182,212,0.1);
+  border-color: rgba(6,182,212,0.25);
+}
+
+/* カードの見出し */
+.problem-card-title {
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--col-text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* カードの説明文 */
+.problem-card-desc {
+  font-size: 13.5px;
+  line-height: 1.85;
+  color: var(--col-text-secondary);
+  margin: 0;
+}
+.problem-card-desc strong {
+  color: var(--col-text-primary);
+  font-weight: 700;
+}
+
+/* レスポンシブ（スマートフォン：1カラム） */
+@media (max-width: 768px) {
+  .problem-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Paradigm Shift */
+.paradigm-shift {
+  border: 1px solid rgba(79,142,247,0.25);
   border-radius: var(--radius-xl);
-  padding: 56px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* padding は inner-content 側で指定 */
 }
 
 .paradigm-shift::before {
@@ -745,6 +864,53 @@ ul { list-style: none; }
   top: 0; left: 0; right: 0;
   height: 3px;
   background: var(--grad-primary);
+  z-index: 3;
+}
+
+/* ---- 背景ビデオ ---- */
+.paradigm-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.paradigm-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(0.3) saturate(1.2);
+}
+
+.paradigm-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,8,15,0.55) 0%,
+      rgba(7,8,15,0.35) 40%,
+      rgba(7,8,15,0.35) 60%,
+      rgba(7,8,15,0.65) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgba(7,8,15,0.4) 0%,
+      transparent 20%,
+      transparent 80%,
+      rgba(7,8,15,0.4) 100%
+    );
+}
+
+/* ---- コンテンツ層（ビデオの上に浮かぶ） ---- */
+.paradigm-inner-content {
+  position: relative;
+  z-index: 2;
+  padding: 64px 56px;
 }
 
 .paradigm-label {
@@ -1753,7 +1919,7 @@ ul { list-style: none; }
   .pricing-grid { grid-template-columns: 1fr; }
   .target-grid { grid-template-columns: 1fr; }
 
-  .paradigm-shift { padding: 36px 24px; }
+  .paradigm-inner-content { padding: 40px 24px; }
 
   .footer-content { flex-direction: column; }
   .footer-links { flex-wrap: wrap; }
