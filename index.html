@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AItema（アイテマ）| SNSの発信を「確かな信頼」に変えるAI活用WEB制作</title>
+  <title>AItema（アイテマ）| AI活用型WEB制作でブランドを育てる</title>
   <meta name="description" content="AIを活用した高コスパWEB制作で、SNSや外部メディアでの発信をブランド価値に変える分散型マルチチャネルブランディング支援。無料ブランド診断24時間受付。">
-  <meta property="og:title" content="AItema（アイテマ）| SNSの発信を「確かな信頼」に変えるAI活用WEB制作">
-  <meta property="og:description" content="作って終わりのホームページは、もういらない。SNSでの発信を確かな信頼に変えるブランド最大化コンサルティング。">
+  <meta property="og:title" content="AItema（アイテマ）| AI活用型WEB制作でブランドを育てる">
+  <meta property="og:description" content="愛があるから手間をかける。SNSでの発信を確かな信頼に変えるブランド最大化コンサルティング。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@700;900&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,11 +40,13 @@
         <span class="logo-text">AI<span class="logo-accent">tema</span></span>
       </div>
       <div class="nav-links">
-        <a href="#about" class="nav-link">サービスとは</a>
-        <a href="#features" class="nav-link">特徴・強み</a>
-        <a href="#pricing" class="nav-link">料金プラン</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="#cta-final" class="btn btn-nav" id="nav-cta-btn">無料診断を予約</a>
+        <a href="#philosophy" class="nav-link">Philosophy</a>
+        <a href="#story" class="nav-link">Story</a>
+        <a href="#vision" class="nav-link">Vision</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#works" class="nav-link">Works</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#cta-final" class="btn btn-nav btn-primary" id="nav-cta-btn">無料診断を予約</a>
       </div>
       <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く">
         <span></span><span></span><span></span>
@@ -54,793 +56,459 @@
 
   <!-- ===== MOBILE MENU ===== -->
   <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu-links">
-      <a href="#about" class="mobile-link">サービスとは</a>
-      <a href="#features" class="mobile-link">特徴・強み</a>
-      <a href="#pricing" class="mobile-link">料金プラン</a>
-      <a href="#faq" class="mobile-link">FAQ</a>
-      <a href="#cta-final" class="btn btn-primary mobile-cta">無料ブランド診断を予約する</a>
-    </div>
+    <a href="#philosophy" class="mobile-link">Philosophy</a>
+    <a href="#story" class="mobile-link">Story</a>
+    <a href="#vision" class="mobile-link">Vision</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#works" class="mobile-link">Works</a>
+    <a href="#process" class="mobile-link">Process</a>
+    <a href="#cta-final" class="btn btn-primary mobile-cta">無料ブランド診断を予約する</a>
   </div>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
-
-    <!-- Video Background -->
     <div class="hero-video-wrap">
-      <video
-        class="hero-video"
-        id="hero-video"
-        src="webm/typing.webm"
-        autoplay
-        loop
-        muted
-        playsinline
-        preload="auto"
-        aria-hidden="true"
-      ></video>
-      <!-- 暗幕グラデーションオーバーレイ -->
+      <video class="hero-video" id="hero-video" src="webm/typing.webm" autoplay loop muted playsinline preload="auto" aria-hidden="true"></video>
       <div class="hero-video-overlay"></div>
-      <!-- ノイズ質感レイヤー -->
       <div class="hero-video-noise"></div>
     </div>
-
-    <!-- Hero Content: centered, full-screen -->
     <div class="hero-content">
-
-      <!-- Main Catchcopy with Typewriter -->
-      <h1 class="hero-title" id="hero-title" aria-label="作って終わりのホームページは、もういらない。">
-        <span class="typewriter-line" id="typewriter-display"></span><span class="typewriter-cursor" id="typewriter-cursor" aria-hidden="true">|</span>
+      <h1 class="hero-title" id="hero-title" aria-label="愛（AI）があるから手間をかける">
+        <span class="reveal-line reveal-line-1"><ruby class="hero-ruby">愛<rt>AI</rt></ruby>があるから</span><br>
+        <span class="reveal-line reveal-line-2">手間をかける</span>
       </h1>
-
-      <!-- Sub copy (appears after typing completes) -->
-      <p class="hero-subtitle" id="hero-subtitle">
-        あなたの公式ウェブサイトを<br><span class="hero-highlight">「確かな信頼」</span>に変える
-      </p>
-
+      <p class="hero-subtitle" id="hero-subtitle">AItema（アイテマ）はAIで<br><span class="hero-highlight">未来のホームページ</span>を創る。</p>
       <p class="hero-desc" id="hero-desc">
-        AI活用による圧倒的なコストパフォーマンスで、<br>
-        あなたの魅力がひと目で伝わるWEBサイトを構築。<br>
-        SNS発信をブランド資産に変え、ファンを増やす<br>
-        ビジネス伴走型WEB制作会社です。
+        AIの圧倒的な効率と、人間にしかできない丁寧な対話。<br>
+        その掛け算で、あなたのブランドを最大化する<br>
+        WEB制作・ブランドコンサルティングです。
       </p>
-
-      <!-- CTAs -->
       <div class="hero-ctas" id="hero-ctas">
         <a href="#cta-final" class="btn btn-primary btn-hero" id="hero-cta-btn">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-          AIチャットで30秒！無料ブランド診断を予約する
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          無料ブランド診断を予約する
           <span class="btn-badge">24h対応</span>
         </a>
-        <a href="#about" class="btn btn-ghost-hero">
-          サービスの詳細を見る
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
-            <polyline points="9 18 15 12 9 6"/>
-          </svg>
+        <a href="#philosophy" class="btn btn-ghost-hero">
+          AItemaとは？
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow"><polyline points="9 18 15 12 9 6"/></svg>
         </a>
       </div>
-
-      <!-- Social proof pills -->
       <div class="hero-social-proof" id="hero-proof">
-        <div class="proof-item">
-          <span class="proof-icon">✦</span>
-          <span>AI×コンサルで圧倒的コスパ</span>
-        </div>
+        <div class="proof-item"><span class="proof-icon">✦</span><span>AIで圧倒的コスパを実現</span></div>
         <div class="proof-divider"></div>
-        <div class="proof-item">
-          <span class="proof-icon">✦</span>
-          <span>最短1週間でサイト公開</span>
-        </div>
+        <div class="proof-item"><span class="proof-icon">✦</span><span>最短2週間でサイト公開</span></div>
         <div class="proof-divider"></div>
-        <div class="proof-item">
-          <span class="proof-icon">✦</span>
-          <span>作って終わらない伴走型制作</span>
-        </div>
+        <div class="proof-item"><span class="proof-icon">✦</span><span>作って終わりにしない伴走支援</span></div>
       </div>
     </div>
-
-    <!-- Scroll hint -->
     <div class="hero-scroll-hint">
       <div class="scroll-line"></div>
       <span>スクロール</span>
     </div>
   </section>
 
-  <!-- ===== PROBLEM SECTION ===== -->
-  <section class="problem-section" id="about">
+  <!-- ===== 02 PHILOSOPHY ===== -->
+  <section class="philosophy-section" id="philosophy">
     <div class="container">
       <div class="section-header">
-        <div class="section-eyebrow">こんなお悩みありませんか？</div>
-        <h2 class="section-title">多くの事業者が抱える<br><span class="text-gradient">「発信の迷子」</span>問題</h2>
+        <div class="section-eyebrow">Philosophy</div>
+        <h2 class="section-title">AItema（アイテマ）の<br><span class="text-gradient">名前の意味</span></h2>
+        <p class="section-desc">3つの言葉に込めた、私たちの想い</p>
       </div>
 
-      <div class="problem-grid problem-grid-3">
+      <div class="philosophy-blocks">
 
-        <!-- 事例1 -->
-        <div class="problem-card problem-card-rich" data-reveal>
-          <div class="problem-image">
-            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="pg1a" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#4F8EF7" stop-opacity="0.9"/>
-                  <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.9"/>
-                </linearGradient>
-                <linearGradient id="pg1b" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
-                  <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.5"/>
-                </linearGradient>
-                <radialGradient id="pg1glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#4F8EF7" stop-opacity="0.18"/>
-                  <stop offset="100%" stop-color="#4F8EF7" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <!-- 背景グロー -->
-              <ellipse cx="160" cy="90" rx="130" ry="80" fill="url(#pg1glow)"/>
-              <!-- スマートフォン本体 -->
-              <rect x="128" y="24" width="64" height="110" rx="10" fill="rgba(15,20,40,0.9)" stroke="url(#pg1a)" stroke-width="2"/>
-              <rect x="136" y="34" width="48" height="72" rx="4" fill="rgba(79,142,247,0.08)"/>
-              <!-- 画面内：SNSアイコン（ハート・いいね・コメント） -->
-              <rect x="140" y="38" width="40" height="6" rx="3" fill="rgba(79,142,247,0.4)"/>
-              <rect x="140" y="48" width="28" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
-              <rect x="140" y="56" width="40" height="20" rx="3" fill="rgba(79,142,247,0.1)" stroke="rgba(79,142,247,0.25)" stroke-width="1"/>
-              <path d="M150 70 C150 67 154 65 156 68 C158 65 162 67 162 70 C162 73 156 77 156 77 C156 77 150 73 150 70Z" fill="rgba(236,72,153,0.7)"/>
-              <!-- 霧散する矢印（どこにも繋がらない） -->
-              <!-- 右上方向 -->
-              <line x1="196" y1="58" x2="230" y2="34" stroke="url(#pg1a)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
-              <path d="M224 30 L232 34 L226 40" stroke="url(#pg1a)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
-              <!-- 右方向 -->
-              <line x1="196" y1="79" x2="240" y2="79" stroke="url(#pg1b)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5"/>
-              <path d="M234 73 L242 79 L234 85" stroke="url(#pg1b)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-              <!-- 右下方向 -->
-              <line x1="196" y1="98" x2="228" y2="122" stroke="url(#pg1a)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
-              <path d="M222 118 L230 124 L224 130" stroke="url(#pg1a)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
-              <!-- 左上方向 -->
-              <line x1="128" y1="58" x2="88" y2="38" stroke="url(#pg1b)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.35"/>
-              <path d="M96 34 L86 38 L90 46" stroke="url(#pg1b)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
-              <!-- 消えるクエスチョンマーク -->
-              <text x="245" y="42" font-family="sans-serif" font-size="18" fill="rgba(79,142,247,0.4)" font-weight="bold">?</text>
-              <text x="248" y="83" font-family="sans-serif" font-size="14" fill="rgba(139,92,246,0.35)" font-weight="bold">?</text>
-              <text x="236" y="136" font-family="sans-serif" font-size="12" fill="rgba(79,142,247,0.25)" font-weight="bold">?</text>
-              <!-- ホームボタン -->
-              <circle cx="160" cy="120" r="5" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-            </svg>
-          </div>
-          <div class="problem-card-body">
-            <div class="problem-case-tag">事例 01</div>
-            <h3 class="problem-card-title">SNSは更新しているが、<br>効果があるのか分からない。</h3>
-            <p class="problem-card-desc">毎日時間をかけて投稿しているのに、売上・来店・問い合わせといった<strong>「具体的な成果」に繋がっている実感がない</strong>。発信が点在し、最終的な信頼を裏付ける「公式サイト」への導線が欠けているため、SNSの努力が空回りしてしまっている状態です。</p>
-          </div>
-        </div>
-
-        <!-- 事例2 -->
-        <div class="problem-card problem-card-rich" data-reveal>
-          <div class="problem-image">
-            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="pg2a" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.9"/>
-                  <stop offset="100%" stop-color="#4F8EF7" stop-opacity="0.9"/>
-                </linearGradient>
-                <radialGradient id="pg2glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18"/>
-                  <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <ellipse cx="160" cy="90" rx="130" ry="80" fill="url(#pg2glow)"/>
-              <!-- 左側：高額請求書カード -->
-              <rect x="28" y="44" width="100" height="80" rx="8" fill="rgba(15,20,40,0.9)" stroke="rgba(236,72,153,0.5)" stroke-width="1.5"/>
-              <rect x="36" y="52" width="84" height="8" rx="4" fill="rgba(236,72,153,0.3)"/>
-              <rect x="36" y="64" width="64" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
-              <rect x="36" y="72" width="52" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
-              <rect x="36" y="84" width="72" height="2" rx="1" fill="rgba(255,255,255,0.06)"/>
-              <!-- 価格テキスト -->
-              <text x="36" y="106" font-family="sans-serif" font-size="13" fill="rgba(236,72,153,0.9)" font-weight="bold">¥ 800,000〜</text>
-              <!-- ✕マーク -->
-              <circle cx="78" cy="136" r="10" fill="rgba(236,72,153,0.15)" stroke="rgba(236,72,153,0.4)" stroke-width="1.5"/>
-              <line x1="72" y1="130" x2="84" y2="142" stroke="rgba(236,72,153,0.7)" stroke-width="2" stroke-linecap="round"/>
-              <line x1="84" y1="130" x2="72" y2="142" stroke="rgba(236,72,153,0.7)" stroke-width="2" stroke-linecap="round"/>
-              <!-- 中央：VS -->
-              <text x="151" y="96" font-family="sans-serif" font-size="14" fill="rgba(255,255,255,0.25)" font-weight="bold">vs</text>
-              <!-- 右側：テンプレートカード（同じ形のサイト2枚） -->
-              <rect x="192" y="38" width="52" height="44" rx="6" fill="rgba(15,20,40,0.9)" stroke="rgba(79,142,247,0.25)" stroke-width="1"/>
-              <rect x="198" y="44" width="40" height="6" rx="3" fill="rgba(79,142,247,0.2)"/>
-              <rect x="198" y="54" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.1)"/>
-              <rect x="198" y="60" width="36" height="3" rx="1.5" fill="rgba(255,255,255,0.07)"/>
-              <rect x="198" y="66" width="32" height="6" rx="3" fill="rgba(79,142,247,0.15)"/>
-              <rect x="200" y="96" width="52" height="44" rx="6" fill="rgba(15,20,40,0.9)" stroke="rgba(79,142,247,0.2)" stroke-width="1"/>
-              <rect x="206" y="102" width="40" height="6" rx="3" fill="rgba(79,142,247,0.2)"/>
-              <rect x="206" y="112" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.1)"/>
-              <rect x="206" y="118" width="36" height="3" rx="1.5" fill="rgba(255,255,255,0.07)"/>
-              <rect x="206" y="124" width="32" height="6" rx="3" fill="rgba(79,142,247,0.15)"/>
-              <!-- "COPY"ラベル -->
-              <text x="250" y="62" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">COPY</text>
-              <text x="252" y="122" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.2)">COPY</text>
-            </svg>
-          </div>
-          <div class="problem-card-body">
-            <div class="problem-case-tag problem-case-tag-purple">事例 02</div>
-            <h3 class="problem-card-title">オシャレなWebサイトが欲しいが、<br>制作費が高くテンプレートっぽい。</h3>
-            <p class="problem-card-desc">自社の魅力を100%伝えるオリジナルデザインを求めると100万円近い見積もりになり、格安サービスでは<strong>他社と酷似した安っぽいテンプレート感</strong>が出てしまう。どちらも選べないジレンマで、ホームページ制作を諦めてしまうケース。</p>
-          </div>
-        </div>
-
-        <!-- 事例3 -->
-        <div class="problem-card problem-card-rich" data-reveal>
-          <div class="problem-image">
-            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="pg3a" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.9"/>
-                  <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.9"/>
-                </linearGradient>
-                <linearGradient id="pg3bar" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8"/>
-                  <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.4"/>
-                </linearGradient>
-                <radialGradient id="pg3glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.16"/>
-                  <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <ellipse cx="160" cy="90" rx="130" ry="80" fill="url(#pg3glow)"/>
-              <!-- カレンダー -->
-              <rect x="44" y="30" width="100" height="90" rx="8" fill="rgba(15,20,40,0.9)" stroke="rgba(6,182,212,0.4)" stroke-width="1.5"/>
-              <rect x="44" y="30" width="100" height="24" rx="8" fill="rgba(6,182,212,0.15)"/>
-              <rect x="44" y="42" width="100" height="12" rx="0" fill="rgba(6,182,212,0.1)"/>
-              <text x="73" y="43" font-family="sans-serif" font-size="9" fill="rgba(6,182,212,0.9)">毎月の維持費</text>
-              <!-- カレンダー格子 -->
-              <line x1="68" y1="54" x2="68" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-              <line x1="92" y1="54" x2="92" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-              <line x1="116" y1="54" x2="116" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-              <line x1="44" y1="70" x2="144" y2="70" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-              <line x1="44" y1="86" x2="144" y2="86" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-              <line x1="44" y1="102" x2="144" y2="102" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-              <!-- コイン流出の矢印 -->
-              <path d="M144 60 Q180 50 210 40" stroke="url(#pg3a)" stroke-width="2" stroke-dasharray="5 3" fill="none" opacity="0.7"/>
-              <path d="M144 80 Q180 78 218 72" stroke="url(#pg3a)" stroke-width="1.5" stroke-dasharray="4 3" fill="none" opacity="0.5"/>
-              <path d="M144 100 Q175 105 212 108" stroke="url(#pg3a)" stroke-width="1.5" stroke-dasharray="4 3" fill="none" opacity="0.35"/>
-              <!-- コイン群 -->
-              <circle cx="216" cy="38" r="10" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.6)" stroke-width="1.5"/>
-              <text x="210" y="43" font-family="sans-serif" font-size="10" fill="rgba(6,182,212,0.9)" font-weight="bold">¥</text>
-              <circle cx="222" cy="70" r="8" fill="rgba(139,92,246,0.2)" stroke="rgba(139,92,246,0.5)" stroke-width="1.5"/>
-              <text x="217" y="74" font-family="sans-serif" font-size="9" fill="rgba(139,92,246,0.9)" font-weight="bold">¥</text>
-              <circle cx="216" cy="106" r="7" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.35)" stroke-width="1.5"/>
-              <text x="211" y="110" font-family="sans-serif" font-size="8" fill="rgba(6,182,212,0.7)" font-weight="bold">¥</text>
-              <!-- 下降グラフ（価値が下がり続ける） -->
-              <polyline points="48,148 74,148 100,156 126,160 152,164" stroke="rgba(236,72,153,0.6)" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
-              <text x="46" y="174" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.25)">サイトの価値</text>
-              <path d="M148 160 L155 164 L148 168" stroke="rgba(236,72,153,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
-          </div>
-          <div class="problem-card-body">
-            <div class="problem-case-tag problem-case-tag-teal">事例 03</div>
-            <h3 class="problem-card-title">Webサイトはあるけれど<br>毎月の維持費が割に合わない。</h3>
-            <p class="problem-card-desc">月数万円の管理費を払い続けているのに、中身は数年間更新されておらず実質「ドメインとサーバー代」に費用が流出。<strong>自分でテキストも直せず</strong>、小さな修正のたびに追加費用を請求される理不尽なコスト体質から抜け出せずにいる状態です。</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Paradigm Shift -->
-      <div class="paradigm-shift" data-reveal>
-
-        <!-- 背景ビデオ -->
-        <div class="paradigm-video-wrap">
-          <video
-            class="paradigm-video"
-            src="webm/mulch-channel.webm"
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="auto"
-            aria-hidden="true"
-          ></video>
-          <div class="paradigm-video-overlay"></div>
-        </div>
-
-        <!-- コンテンツ（ビデオの上に浮かぶ） -->
-        <div class="paradigm-inner-content">
-          <div class="paradigm-header">
-            <div class="paradigm-label">AItemaのご提案</div>
-            <h3 class="paradigm-title">ホームページの役割を<br>再定義します。</h3>
-          </div>
-          <div class="paradigm-content">
-            <div class="paradigm-before">
-              <div class="paradigm-tag tag-before">従来の考え方</div>
-              <p class="paradigm-text">ホームページ = アクセスを自分で集める場所<br><span class="text-muted">SEOブログ地獄・更新疲れ・費用対効果が不透明</span></p>
+        <div class="philosophy-block" data-reveal>
+          <div class="philosophy-block-inner">
+            <div class="philosophy-word">
+              <span class="philosophy-word-en">AI</span>
+              <span class="philosophy-word-ja">Artificial Intelligence</span>
             </div>
-            <div class="paradigm-arrow">
-              <svg viewBox="0 0 60 60" fill="none">
+            <div class="philosophy-body">
+              <h3 class="philosophy-title">技術がもたらす圧倒的なスピード</h3>
+              <p class="philosophy-text">
+                AIは進化を続けており、その技術は生産性を向上します。<br>
+                技術の進歩により作業工程を大幅に効率化させたため、<br>
+                ハイクオリティなWEBサイトを<strong>安く、早く</strong>ご提供します。<br>
+                まずは技術の進化を、ご体験ください。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-block" data-reveal>
+          <div class="philosophy-block-inner">
+            <div class="philosophy-word">
+              <span class="philosophy-word-en" style="color: var(--col-purple);">手間</span>
+              <span class="philosophy-word-ja" style="color: rgba(139,92,246,0.4);">Effort</span>
+            </div>
+            <div class="philosophy-body">
+              <h3 class="philosophy-title">その手間が、価値を生む。</h3>
+              <p class="philosophy-text">
+                効率化の時代だからこそ、私たちは手間を惜しみません。<br>
+                人の手で手間をかけることに価値が生まれると考えます。<br>
+                良い物を作る、良い仕事をする、だから手間をかける。<br>
+                <strong>「その手間は、仕事への愛である」</strong><br>
+                この言葉が、AItemaのすべてを表しています。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-block" data-reveal>
+          <div class="philosophy-block-inner">
+            <div class="philosophy-word">
+              <span class="philosophy-word-en" style="color: var(--col-teal);">Item</span>
+              <span class="philosophy-word-ja" style="color: rgba(6,182,212,0.4);">アイテム</span>
+            </div>
+            <div class="philosophy-body">
+              <h3 class="philosophy-title">あなたの最強の武器を、つくる。</h3>
+              <p class="philosophy-text">
+                AItemaが作るのは、ホームページだけではありません。<br>
+                あなたのビジネスを守り、広め、成長させる<strong>「最強の道具（アイテム）」</strong>です。<br>
+                SNSの発信を受け止め、訪問者を顧客に変え、ブランドの信頼を積み上げ続ける。<br>
+                ビジネスパートナーとして、共に成長を目指す伴走型のWEB制作事業です。
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 03 STORY ===== -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Strategy</div>
+        <h2 class="section-title">AItemaの<span class="text-gradient">戦略</span></h2>
+      </div>
+      <div class="story-grid">
+        <div class="story-image-wrap" data-reveal>
+          <div class="story-image-placeholder">
+            <div class="story-image-inner">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <linearGradient id="storyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color:#4F8EF7"/>
                     <stop offset="100%" style="stop-color:#8B5CF6"/>
                   </linearGradient>
                 </defs>
-                <path d="M10 30 H45 M35 20 L45 30 L35 40" stroke="url(#arrowGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="100" cy="80" r="40" fill="rgba(79,142,247,0.1)" stroke="url(#storyGrad)" stroke-width="2"/>
+                <circle cx="100" cy="72" r="22" fill="rgba(79,142,247,0.15)" stroke="url(#storyGrad)" stroke-width="1.5"/>
+                <ellipse cx="100" cy="145" rx="46" ry="28" fill="rgba(79,142,247,0.1)" stroke="url(#storyGrad)" stroke-width="1.5"/>
               </svg>
-            </div>
-            <div class="paradigm-after">
-              <div class="paradigm-tag tag-after">AItemaの考え方</div>
-              <p class="paradigm-text">ホームページ = すべての活動を1つにまとめる<br><strong>「ブランドの公式窓口」</strong><br><span class="text-accent">SNSで集客の種を蒔き、サイトで信頼を収穫する</span></p>
+              <p class="story-placeholder-text">代表写真<br>準備中</p>
             </div>
           </div>
-
-          <div class="paradigm-quote">
-            <div class="quote-line"></div>
-            <p>今の時代、ホームページはアクセスを集める主役ではなく、<br>
-            あなたの<strong>「すべての活動」を1つにまとめ、お客様に信頼と安心感を与える</strong><br>
-            <em>「ブランドの入り口」</em>であるべきです。</p>
-            <div class="quote-line"></div>
+          <div class="story-profile">
+            <p class="story-profile-name">代表者名</p>
+            <p class="story-profile-title">AItema 代表 / WEBブランドディレクター</p>
+            <p class="story-profile-message">1993年生まれ、横浜市出身。</p>
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FEATURES SECTION ===== -->
-  <section class="features-section" id="features">
-    <div class="features-bg">
-      <div class="features-orb features-orb-1"></div>
-      <div class="features-orb features-orb-2"></div>
-    </div>
-    <div class="container">
-      <div class="section-header">
-        <div class="section-eyebrow">特徴・強み</div>
-        <h2 class="section-title">AItemaが選ばれる<br><span class="text-gradient">3つの理由</span></h2>
-        <p class="section-desc">他社との決定的な違いを、あなたのビジネスに<br>直結するかたちでご説明します。</p>
-      </div>
-
-      <div class="features-list">
-
-        <!-- Feature 1 -->
-        <div class="feature-item feature-item-1" data-reveal>
-          <div class="feature-number">01</div>
-          <div class="feature-body">
-            <div class="feature-icon-wrap icon-blue">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="8" fill="rgba(79,142,247,0.2)" stroke="#4F8EF7" stroke-width="2"/>
-                <circle cx="8" cy="12" r="4" fill="rgba(79,142,247,0.15)" stroke="#4F8EF7" stroke-width="1.5"/>
-                <circle cx="40" cy="12" r="4" fill="rgba(139,92,246,0.15)" stroke="#8B5CF6" stroke-width="1.5"/>
-                <circle cx="8" cy="36" r="4" fill="rgba(6,182,212,0.15)" stroke="#06B6D4" stroke-width="1.5"/>
-                <circle cx="40" cy="36" r="4" fill="rgba(139,92,246,0.15)" stroke="#8B5CF6" stroke-width="1.5"/>
-                <line x1="12" y1="12" x2="20" y2="20" stroke="#4F8EF7" stroke-width="1.5" stroke-dasharray="2,2"/>
-                <line x1="36" y1="12" x2="28" y2="20" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="2,2"/>
-                <line x1="12" y1="36" x2="20" y2="28" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="2,2"/>
-                <line x1="36" y1="36" x2="28" y2="28" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="2,2"/>
-              </svg>
-            </div>
-            <div class="feature-content">
-              <span class="feature-tag">全体設計</span>
-              <h3 class="feature-title">
-                散らばった発信を1つにする<br>「公式ホームページ」
-              </h3>
-              <p class="feature-desc">SNSや他プラットフォームの動線を綺麗に整理。あなたの活動やビジネスの全容が一目でわかり、最後の「信頼」を生み出すサイトを構築します。InstagramやYouTube、note、公式LINEなど、すでに動いている場所での発信が、すべて公式サイトという「本陣」に帰ってくる構造を設計します。</p>
-              <div class="feature-chips">
-                <span class="chip">動線設計</span>
-                <span class="chip">SNS統合</span>
-                <span class="chip">ブランド最大化</span>
+        <div class="story-text" data-reveal>
+          <div class="story-origin">
+            <h3 class="story-heading">未来を見据えたホームページの価値とは</h3>
+            <p>今、ホームページを持つ意味とはなんでしょうか？<br>
+            現在はSNSからの検索流入が増え、これからAI検索も発達していくと予想されます。<br>
+            ビジネスにおいて、ホームページは集客の主体ではなくなり、個性や強みを伝える独自のブランディングが重要な役割となっていきます。<br><br>
+            
+            <strong>魅せるデザインが、あなたのビジネスを強化する。</strong><br><br>
+            ビジネスで情報発信を行うのは最大の武器になります。<br>
+            しかし、闇雲に情報発信するだけでは顧客が迷う可能性も考えられます。<br>
+            私たちは<strong>「分散型マルチチャネルブランディング」</strong>を提唱しており、効果的なSNS運用をご提案するとともに、分散した情報発信を1つにまとめる「公式ホームページ」の制作でブランド全体を見据えたWEB制作を行ってまいります。</p>
+          </div>
+          <div class="story-values">
+            <div class="story-value-item">
+              <span class="story-value-icon">💡</span>
+              <div>
+                <strong>AI活用で、作業コストを削減</strong>
+                <p>高品質なオリジナルデザインを、AIの力で圧倒的なコスパで実現します。</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="feature-item feature-item-2" data-reveal>
-          <div class="feature-number">02</div>
-          <div class="feature-body">
-            <div class="feature-icon-wrap icon-purple">
-              <svg viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="16" width="14" height="20" rx="3" fill="rgba(139,92,246,0.15)" stroke="#8B5CF6" stroke-width="1.5"/>
-                <rect x="26" y="10" width="14" height="26" rx="3" fill="rgba(79,142,247,0.15)" stroke="#4F8EF7" stroke-width="1.5"/>
-                <circle cx="15" cy="8" r="3" fill="rgba(139,92,246,0.2)" stroke="#8B5CF6" stroke-width="1.5"/>
-                <path d="M12 8 L12 16" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="2,2"/>
-                <path d="M22 28 L26 28" stroke="url(#arrowGrad)" stroke-width="1.5"/>
-                <circle cx="38" cy="38" r="4" fill="rgba(6,182,212,0.2)" stroke="#06B6D4" stroke-width="1.5"/>
-                <path d="M28 38 A10 10 0 0 0 38 34" stroke="#06B6D4" stroke-width="1" stroke-dasharray="2,2" fill="none"/>
-              </svg>
-            </div>
-            <div class="feature-content">
-              <span class="feature-tag">AI×クリエイティブ</span>
-              <h3 class="feature-title">
-                作業コストを削り、あなたとの<br>「対話」を重視します
-              </h3>
-              <p class="feature-desc">サイト制作の「作業」部分はAIで徹底的に効率化。その分、あなたの強みやブランドを一緒に言葉にする「丁寧なコンサルティング」に時間を割きます。テンプレートは一切使用せず、1から形にするオリジナルデザインだからこそ、あなたのブランドが際立ちます。</p>
-              <div class="feature-chips">
-                <span class="chip">AI効率化</span>
-                <span class="chip">完全オリジナルデザイン</span>
-                <span class="chip">ブランド言語化</span>
+            <div class="story-value-item">
+              <span class="story-value-icon">🤝</span>
+              <div>
+                <strong>対話で、ブランドの「核」を見つける</strong>
+                <p>丁寧なヒアリングで、あなた自身も気づいていない強みを言語化します。</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="feature-item feature-item-3" data-reveal>
-          <div class="feature-number">03</div>
-          <div class="feature-body">
-            <div class="feature-icon-wrap icon-teal">
-              <svg viewBox="0 0 48 48" fill="none">
-                <path d="M24 6 L24 42" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="3,3"/>
-                <circle cx="24" cy="12" r="4" fill="rgba(6,182,212,0.2)" stroke="#06B6D4" stroke-width="1.5"/>
-                <circle cx="24" cy="24" r="4" fill="rgba(79,142,247,0.2)" stroke="#4F8EF7" stroke-width="1.5"/>
-                <circle cx="24" cy="36" r="4" fill="rgba(139,92,246,0.2)" stroke="#8B5CF6" stroke-width="1.5"/>
-                <path d="M28 12 Q38 16 36 24 Q34 32 28 36" stroke="#06B6D4" stroke-width="1.5" fill="none" opacity="0.6"/>
-                <circle cx="38" cy="20" r="3" fill="rgba(6,182,212,0.15)" stroke="#06B6D4" stroke-width="1"/>
-              </svg>
-            </div>
-            <div class="feature-content">
-              <span class="feature-tag">運用支援</span>
-              <h3 class="feature-title">
-                作って終わらない、<br>日々の発信サポート
-              </h3>
-              <p class="feature-desc">各SNSでの発信を効率化するAIツールの使い方や、専門的なマーケティング分析で無理なく続けられる運用のロードマップを一緒に作ります。月額5,000円（税別）の保守管理プランで、作った後も安心してビジネスを続けられます。</p>
-              <div class="feature-chips">
-                <span class="chip">月次サポート</span>
-                <span class="chip">AIツール活用</span>
-                <span class="chip">運用ロードマップ</span>
+            <div class="story-value-item">
+              <span class="story-value-icon">🌱</span>
+              <div>
+                <strong>作った後も、一緒に育てる</strong>
+                <p>納品後も定期的なサポートで「ブランド資産」に育てていきます。</p>
               </div>
             </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TARGET SECTION ===== -->
-  <section class="target-section" id="target">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-eyebrow">選ばれる理由があります</div>
-        <h2 class="section-title">あなたに<span class="text-gradient">当てはまりますか？</span></h2>
-      </div>
-
-      <div class="target-grid">
-        <div class="target-card" data-reveal>
-          <div class="target-image">
-            <img src="images/business.webp" alt="中小企業・個人事業主" loading="lazy">
-          </div>
-          <div class="target-card-body">
-            <div class="target-label">ビジネス層</div>
-            <h3 class="target-name">サイトもSNSもある。<br>だけど「個性」を感じない<br>中小企業・個人事業主様</h3>
-            <ul class="target-list">
-              <li>競合と差別化させたいが、コストが割に合わない</li>
-              <li>制作会社の高額見積もりでサイト制作を諦めた</li>
-              <li>SEO対策のためにブログを書く時間も余裕もない</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="target-card target-card-featured" data-reveal>
-          <div class="target-image">
-            <img src="images/cafe_owner.webp" alt="飲食店・ローカルビジネス" loading="lazy">
-          </div>
-          <div class="target-card-body">
-            <div class="target-label">飲食店・ローカルビジネス</div>
-            <h3 class="target-name">SNS発信が予約・来店に<br>結びついていない経営者様</h3>
-            <ul class="target-list">
-              <li>InstagramやLINEはやっているが店舗の公式サイトがない</li>
-              <li>最適なSNS運用まで相談に乗ってくれるパートナーが欲しい</li>
-              <li>お店のこだわりをじっくり伝える公式サイトが欲しい</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="target-card" data-reveal>
-          <div class="target-image">
-            <img src="images/Vtuber.webp" alt="Vtuber・配信者" loading="lazy">
-          </div>
-          <div class="target-card-body">
-            <div class="target-label">クリエイター層</div>
-            <h3 class="target-name">活動が散らばって<br>全容が伝わりにくい<br>Vtuber・配信者様</h3>
-            <ul class="target-list">
-              <li>YouTube・X・Pixivなど活動場所がバラバラ</li>
-              <li>実績が一目でわかるポートフォリオがない</li>
-              <li>低コストで信頼性の高いオフィシャルサイトを持ちたい</li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PRICING SECTION ===== -->
-  <section class="pricing-section" id="pricing">
-    <div class="pricing-bg">
-      <div class="pricing-orb pricing-orb-1"></div>
-      <div class="pricing-orb pricing-orb-2"></div>
-    </div>
+  <!-- ===== 04 VISION ===== -->
+  <section class="vision-section" id="vision">
     <div class="container">
       <div class="section-header">
-        <div class="section-eyebrow">サービスプラン・料金</div>
-        <h2 class="section-title">本当に必要な<br><span class="text-gradient">ブランド設計と品質</span>を両立</h2>
-        <p class="section-desc">AIで制作工程を徹底的に省き、対話の力で<br>妥協なく最大の価値をご提供します。</p>
+        <div class="section-eyebrow">Vision</div>
+        <h2 class="section-title">ホームページの役割を<br><span class="text-gradient">再定義する。</span></h2>
+        <p class="section-desc">分散型マルチチャネルブランディングという考え方。</p>
       </div>
 
-      <div class="pricing-grid">
+      <div class="vision-content" data-reveal>
+        <!-- 横幅フル：マルチチャネル動画 -->
+        <div class="vision-diagram">
+          <video class="vision-video" id="vision-video" src="webm/mulch-channel.webm" autoplay loop muted playsinline preload="auto" aria-hidden="true"></video>
+        </div>
 
-        <!-- Plan 1: Web制作 -->
-        <div class="pricing-card" data-reveal>
-          <div class="pricing-popular-badge">基本のオールインワン</div>
-          <div class="pricing-card-header">
-            <h3 class="pricing-name">公式ホームページ<br>制作パッケージ</h3>
-            <p class="pricing-desc">テンプレートは使用せず、あなたのブランドを丁寧に形にする完全オリジナルデザイン</p>
-          </div>
-          <div class="pricing-price-area">
-            <div class="price-row">
-              <div class="price-main">
-                <span class="price-label">トップページ / LP（1ページ）</span>
-                <div class="price-value">
-                  <span class="price-currency">¥</span>
-                  <span class="price-number">100,000</span>
-                  <span class="price-tax">〜（税別）</span>
-                </div>
+        <!-- テキスト説明 -->
+        <div class="vision-text">
+          <div class="vision-redefine">
+            <div class="vision-before-after">
+              <div class="vision-before">
+                <span class="vision-ba-tag">従来の考え方</span>
+                <p>WEBサイト＝<br><strong>アクセスを集める主役</strong></p>
+                <p class="text-muted">SEO対策ブログの更新疲れ・費用対効果が不明確</p>
+              </div>
+              <div class="vision-arrow-down">
+                <svg viewBox="0 0 24 40" fill="none"><line x1="12" y1="0" x2="12" y2="28" stroke="url(#baGrad)" stroke-width="2"/><polyline points="6 22 12 30 18 22" stroke="url(#baGrad)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="baGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4F8EF7"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+                <span>AItemaの再定義</span>
+              </div>
+              <div class="vision-after">
+                <span class="vision-ba-tag vision-ba-tag-accent">AItemaの考え方</span>
+                <p>WEBサイト＝<br><strong>すべての発信を一つにまとめるブランドの公式窓口</strong></p>
+                <p class="text-accent">SNSで集客の種を蒔き、サイトで信頼を収穫する</p>
               </div>
             </div>
-            <div class="price-option">
-              <span>下層ページ追加（1ページ）</span>
-              <span class="price-option-value">+ ¥25,000（税別）</span>
-            </div>
           </div>
-          <ul class="pricing-features">
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              完全オリジナルデザイン制作<br>（テンプレート不使用）
-            </li>
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              動線・SNS設計・強みの言語化提案
-            </li>
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              お知らせ・新着情報欄の実装
-            </li>
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              お問い合わせフォーム実装（Google連携）
-            </li>
-            <li class="pricing-feature pricing-feature-note">
-              <svg class="check-icon check-icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="8" x2="12" y2="12"/>
-                <line x1="12" y1="16" x2="12.01" y2="16"/>
-              </svg>
-              外部システム連携・実装（要相談・別途見積）
-            </li>
+          <blockquote class="vision-quote">
+            <p>SNSやプラットフォームでの発信を<br>一つの場所に集約し、<br>訪れた人に<em>確かな信頼</em>を届ける。<br>それがAItemaの考えるホームページです。</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 05 WHAT WE DO (SERVICES) ===== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">05 — What We Do</div>
+        <h2 class="section-title">AItemaが提供する<br><span class="text-gradient">3つのサービス軸</span></h2>
+        <p class="section-desc">詳細はご相談の中でご提案します。まずは3つの軸をご覧ください。</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-reveal>
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="32" rx="4" stroke="#4F8EF7" stroke-width="2" fill="rgba(79,142,247,0.08)"/><line x1="6" y1="16" x2="42" y2="16" stroke="#4F8EF7" stroke-width="1.5" opacity="0.5"/><rect x="12" y="22" width="24" height="3" rx="1.5" fill="rgba(79,142,247,0.4)"/><rect x="12" y="29" width="16" height="2" rx="1" fill="rgba(79,142,247,0.25)"/><circle cx="9" cy="12" r="2" fill="#4F8EF7" opacity="0.7"/></svg>
+          </div>
+          <h3 class="service-title">WEB制作</h3>
+          <p class="service-subtitle">AIで高速・完全オリジナル</p>
+          <p class="service-desc">生成AIで作業工程を徹底効率化。その分の時間を「あなたのブランドを形にする対話」に充てる、新しいWEB制作のカタチです。テンプレート不使用のオリジナルデザインを、驚くほどリーズナブルな価格で実現します。</p>
+          <ul class="service-list">
+            <li>完全オリジナルデザイン（¥100,000〜）</li>
+            <li>ブランド言語化コンサル込み</li>
+            <li>SNS導線・動線設計</li>
           </ul>
         </div>
 
-        <!-- Plan 2: 保守 -->
-        <div class="pricing-card pricing-card-accent" data-reveal>
-          <div class="pricing-popular-badge">制作後の安心</div>
-          <div class="pricing-card-header">
-            <h3 class="pricing-name">保守管理・SNS運用<br>サポートパッケージ</h3>
-            <p class="pricing-desc">「作って終わり」にしない、AItemaならではの手厚い伴走サービス（制作クライアント限定）</p>
+        <div class="service-card service-card-accent" data-reveal>
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="10" stroke="#8B5CF6" stroke-width="2" fill="rgba(139,92,246,0.08)"/><path d="M14 38 C14 32 18 28 24 28 C30 28 34 32 34 38" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M10 20 Q14 16 18 20" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/><path d="M30 20 Q34 16 38 20" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/></svg>
           </div>
-          <div class="pricing-price-area">
-            <div class="price-row">
-              <div class="price-main">
-                <span class="price-label">月額費用</span>
-                <div class="price-value">
-                  <span class="price-currency">¥</span>
-                  <span class="price-number">5,000</span>
-                  <span class="price-tax">/ 月（税別）</span>
-                </div>
-              </div>
-            </div>
+          <h3 class="service-title">ブランド言語化</h3>
+          <p class="service-subtitle">強みを言葉にするコンサル</p>
+          <p class="service-desc">「うちの強みって何だろう？」——そんな問いに、丁寧な対話で答えを見つけます。あなた自身も気づいていない独自の価値を言語化し、サイトのコピーやSNSの発信軸として落とし込みます。</p>
+          <ul class="service-list">
+            <li>ヒアリング・ブランド診断</li>
+            <li>キャッチコピー・コンセプト設計</li>
+            <li>発信軸の明確化</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="6" stroke="#06B6D4" stroke-width="2" fill="rgba(6,182,212,0.08)"/><circle cx="8" cy="14" r="4" stroke="#06B6D4" stroke-width="1.5" fill="rgba(6,182,212,0.06)"/><circle cx="40" cy="14" r="4" stroke="#4F8EF7" stroke-width="1.5" fill="rgba(79,142,247,0.06)"/><circle cx="8" cy="34" r="4" stroke="#8B5CF6" stroke-width="1.5" fill="rgba(139,92,246,0.06)"/><circle cx="40" cy="34" r="4" stroke="#06B6D4" stroke-width="1.5" fill="rgba(6,182,212,0.06)"/><line x1="12" y1="16" x2="20" y2="21" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="2,2"/><line x1="36" y1="16" x2="28" y2="21" stroke="#4F8EF7" stroke-width="1.5" stroke-dasharray="2,2"/><line x1="12" y1="32" x2="20" y2="27" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="2,2"/><line x1="36" y1="32" x2="28" y2="27" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="2,2"/></svg>
           </div>
-          <ul class="pricing-features">
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              SNS発信・マーケティング運用相談（月1回）
-            </li>
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              お知らせ・新着情報の更新サポート
-            </li>
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              軽微な文字・画像の修正（月2回まで）
-            </li>
-            <li class="pricing-feature">
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              AIツール活用アドバイス
-            </li>
+          <h3 class="service-title">分散型運用設計</h3>
+          <p class="service-subtitle">SNS・プラットフォームを統合</p>
+          <p class="service-desc">Instagram・X・YouTube・note・LINE——様々なプラットフォームに分散した発信を、一つのブランドとして機能させる「運用ロードマップ」を設計。月額保守プランで継続的にサポートします。</p>
+          <ul class="service-list">
+            <li>SNS運用ロードマップ設計</li>
+            <li>月次サポート（¥5,000〜/月）</li>
+            <li>AIツール活用アドバイス</li>
           </ul>
         </div>
 
       </div>
 
-      <div class="pricing-note" data-reveal>
-        <div class="pricing-note-icon">💡</div>
-        <p><strong>なぜオリジナルデザインなのに、ここまで価格を抑えられるのですか？</strong><br>
-        制作の土台部分やコーディングなどの「作業」を最新の生成AIを活用して徹底的に効率化しているためです。その分削られた時間とコストを、お客様の強みを言葉にし、集客動線を設計する「対話（コンサルティング）」に集中しています。</p>
+      <div class="services-cta" data-reveal>
+        <p class="services-cta-text">詳細なプランは、無料診断の中でご提案します。まずはお気軽にご相談ください。</p>
+        <a href="#cta-final" class="btn btn-primary btn-hero">無料診断でサービス詳細を聞く</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FLOW SECTION ===== -->
-  <section class="flow-section" id="flow">
+  <!-- ===== 06 WORKS ===== -->
+  <section class="works-section" id="works">
     <div class="container">
       <div class="section-header">
-        <div class="section-eyebrow">導入までの流れ</div>
-        <h2 class="section-title">申し込みから公開まで<br><span class="text-gradient">最短2週間</span></h2>
+        <div class="section-eyebrow">06 — Works</div>
+        <h2 class="section-title">実績・<span class="text-gradient">制作事例</span></h2>
+        <p class="section-desc">順次公開予定。あなたの業種の事例もお気軽にご相談ください。</p>
       </div>
 
-      <div class="flow-steps">
-        <div class="flow-step" data-reveal>
-          <div class="flow-step-number">Step 1</div>
-          <div class="flow-step-content">
-            <div class="flow-step-icon">🤖</div>
-            <h3 class="flow-step-title">無料「マルチチャネルブランド診断」</h3>
-            <p class="flow-step-desc">AIチャットボット×カレンダー連携フォームで、深夜でもその場で30秒予約が完了。面倒なメールのやり取りは一切不要です。</p>
-            <div class="flow-step-badge">24時間受付・所要30分</div>
+      <div class="works-grid">
+
+        <div class="works-card" data-reveal>
+          <div class="works-card-image">
+            <div class="works-coming-soon">
+              <span class="works-coming-icon">☕</span>
+              <span class="works-coming-label">Coming Soon</span>
+            </div>
           </div>
-          <div class="flow-connector">
-            <svg viewBox="0 0 24 60" fill="none">
-              <line x1="12" y1="0" x2="12" y2="40" stroke="url(#connGrad)" stroke-width="2" stroke-dasharray="4,4"/>
-              <polyline points="6 34 12 40 18 34" stroke="url(#connGrad)" stroke-width="2" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="connGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" style="stop-color:#4F8EF7"/>
-                  <stop offset="100%" style="stop-color:#8B5CF6"/>
-                </linearGradient>
-              </defs>
-            </svg>
+          <div class="works-card-body">
+            <span class="works-tag">飲食店・カフェ</span>
+            <p class="works-card-title">ローカルカフェの<br>ブランドサイト</p>
           </div>
         </div>
 
-        <div class="flow-step" data-reveal>
-          <div class="flow-step-number">Step 2</div>
-          <div class="flow-step-content">
-            <div class="flow-step-icon">🗺️</div>
-            <h3 class="flow-step-title">ブランドロードマップ提案</h3>
-            <p class="flow-step-desc">現在の発信状況を整理し、公式サイトとSNSとの連携設計図（ロードマップ）をご提示。何をどうすれば良いかが一目でわかります。</p>
-            <div class="flow-step-badge">オンライン / 30〜60分</div>
+        <div class="works-card" data-reveal>
+          <div class="works-card-image">
+            <div class="works-coming-soon">
+              <span class="works-coming-icon">🎨</span>
+              <span class="works-coming-label">Coming Soon</span>
+            </div>
           </div>
-          <div class="flow-connector">
-            <svg viewBox="0 0 24 60" fill="none">
-              <line x1="12" y1="0" x2="12" y2="40" stroke="url(#connGrad)" stroke-width="2" stroke-dasharray="4,4"/>
-              <polyline points="6 34 12 40 18 34" stroke="url(#connGrad)" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+          <div class="works-card-body">
+            <span class="works-tag">クリエイター・Vtuber</span>
+            <p class="works-card-title">クリエイターの<br>ポートフォリオサイト</p>
           </div>
         </div>
 
-        <div class="flow-step" data-reveal>
-          <div class="flow-step-number">Step 3</div>
-          <div class="flow-step-content">
-            <div class="flow-step-icon">🚀</div>
-            <h3 class="flow-step-title">制作・コンサルティング開始</h3>
-            <p class="flow-step-desc">最短2週間でサイトを公開し、運用フェーズへ。伴走サポートプランを選択すれば、その後もずっとAItemaがそばにいます。</p>
-            <div class="flow-step-badge">最短2週間でサイト公開</div>
+        <div class="works-card" data-reveal>
+          <div class="works-card-image">
+            <div class="works-coming-soon">
+              <span class="works-coming-icon">💆</span>
+              <span class="works-coming-label">Coming Soon</span>
+            </div>
+          </div>
+          <div class="works-card-body">
+            <span class="works-tag">美容・サロン</span>
+            <p class="works-card-title">サロンの<br>予約・ブランドサイト</p>
           </div>
         </div>
+
+        <div class="works-card" data-reveal>
+          <div class="works-card-image">
+            <div class="works-coming-soon">
+              <span class="works-coming-icon">🏢</span>
+              <span class="works-coming-label">Coming Soon</span>
+            </div>
+          </div>
+          <div class="works-card-body">
+            <span class="works-tag">中小企業・スタートアップ</span>
+            <p class="works-card-title">企業の<br>コーポレートサイト</p>
+          </div>
+        </div>
+
       </div>
 
-      <div class="flow-cta" data-reveal>
-        <a href="#cta-final" class="btn btn-primary btn-large" id="flow-cta-btn">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
+      <p class="works-note" data-reveal>※ 順次公開予定。掲載をご希望のクライアント様はご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- ===== 07 PROCESS ===== -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">07 — Process</div>
+        <h2 class="section-title">制作の流れ<br><span class="text-gradient">3ステップ</span></h2>
+        <p class="section-desc">無料診断から最短2週間でサイト公開。<br>面倒な手続きは一切不要です。</p>
+      </div>
+
+      <div class="process-timeline">
+
+        <div class="process-step" data-reveal>
+          <div class="process-step-num">
+            <span>01</span>
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-icon">🤖</div>
+            <h3 class="process-step-title">無料診断<br>ロードマップ設計</h3>
+            <p class="process-step-desc">AIチャットボット×カレンダー連携でその場で30秒予約。現状の発信状況をヒアリングし、あなた専用のブランドロードマップをご提示します。</p>
+            <div class="process-step-tags">
+              <span class="process-tag">無料・24h対応</span>
+              <span class="process-tag">所要30〜60分</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <svg viewBox="0 0 24 48" fill="none">
+            <line x1="12" y1="0" x2="12" y2="36" stroke="url(#procGrad)" stroke-width="2" stroke-dasharray="4,4"/>
+            <polyline points="6 30 12 38 18 30" stroke="url(#procGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="procGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4F8EF7"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs>
           </svg>
-          今すぐStep 1から始める（無料）
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="process-step-num">
+            <span>02</span>
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-icon">🎨</div>
+            <h3 class="process-step-title">制作・<br>コンサルティング</h3>
+            <p class="process-step-desc">ご承認いただいたロードマップをもとに、完全オリジナルデザインのサイトを制作。随時フィードバックをいただきながら、あなたのブランドを形にしていきます。</p>
+            <div class="process-step-tags">
+              <span class="process-tag">最短2週間</span>
+              <span class="process-tag">完全オリジナル</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <svg viewBox="0 0 24 48" fill="none">
+            <line x1="12" y1="0" x2="12" y2="36" stroke="url(#procGrad)" stroke-width="2" stroke-dasharray="4,4"/>
+            <polyline points="6 30 12 38 18 30" stroke="url(#procGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="process-step" data-reveal>
+          <div class="process-step-num" style="background: linear-gradient(135deg, rgba(79,142,247,0.2), rgba(139,92,246,0.2)); border-color: rgba(139,92,246,0.5);">
+            <span style="background: linear-gradient(135deg, #4F8EF7, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">03</span>
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-icon">🚀</div>
+            <h3 class="process-step-title">公開・<br>伴走サポート</h3>
+            <p class="process-step-desc">サイト公開後も終わりではありません。月額保守プランで、SNS運用のアドバイスやサイトの更新サポートを継続的に提供。あなたのビジネスの成長に寄り添い続けます。</p>
+            <div class="process-step-tags">
+              <span class="process-tag">月次サポート</span>
+              <span class="process-tag">¥5,000〜/月</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="process-cta" data-reveal>
+        <a href="#cta-final" class="btn btn-primary btn-large">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Step 01：無料診断を予約する
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FAQ SECTION ===== -->
-  <section class="faq-section" id="faq">
-    <div class="faq-bg">
-      <div class="faq-orb faq-orb-1"></div>
-    </div>
-    <div class="container">
-      <div class="section-header">
-        <div class="section-eyebrow">よくある質問</div>
-        <h2 class="section-title">ご不安・ご疑問に<br><span class="text-gradient">お答えします</span></h2>
-      </div>
-
-      <div class="faq-list">
-
-        <div class="faq-item" data-reveal>
-          <button class="faq-question" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
-            <span>なぜオリジナルデザインなのに、ここまで価格を抑えられるのですか？</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-          <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
-            <p>制作の土台部分やコーディングなどの「作業」を最新の生成AIを活用して徹底的に効率化しているためです。その分削られた時間とコストを、お客様の強みを言葉にし、集客動線を設計する「対話（コンサルティング）」のプロセスに集中しています。</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-reveal>
-          <button class="faq-question" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
-            <span>お知らせや新着情報の更新はできますか？</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-          <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
-            <p>はい、可能です。頻度が月2回以内なら保守プラン内で対応します。もっと自由に更新頻度を多くしたい方はお客様にて自動更新できるシステムも構築いたします。（要相談）更新の度に料金が多く発生することがないようにご提案いたします。</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-reveal>
-          <button class="faq-question" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
-            <span>ブログ機能（WordPress等）の追加はできますか？</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-          <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
-            <p>AItemaは「ホームページ単体で無理なSEO対策（ブログ更新）をしない」戦略を推奨しているため、ブログ用の動的機能は標準対応しておりません。集客・宣伝用の情報発信はnote、SNS、公式LINEなどの外部プラットフォームで行い、ホームページはそれらを「まとめる総合窓口（静的サイト）」にすることで、維持コストも管理の手間も最小限に抑えられます。</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-reveal>
-          <button class="faq-question" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
-            <span>本当にホームページ自体のアクセス数が少なくても大丈夫ですか？</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-          <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
-            <p>はい、全く問題ありません。すでにSNSや外部メディアでお客様と接点を持てているなら、ホームページは「信頼の確認場所（本当に存在する会社か、どんな想いがあるか）」として機能すれば十分です。無理なアクセスアップに疲弊する必要はありません。これから新規で開拓する場合でも、戦略的なSNS運用方針をご提案いたします。</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-reveal>
-          <button class="faq-question" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
-            <span>APIの連携など、システムを組み込みたい場合は相談できますか？</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-          <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
-            <p>はい、可能です。APIを使用した外部サービスとの連携などは要相談（別途お見積り）として承っております。AItemaではお客様のビジネスに合わせたヘッドレスCMSの採用やGoogle Workspaceを基本とした高度なAI連携システムもオプションとして提供可能です。診断の際にお気軽にご希望をお聞かせください。（内容によっては実装をお断りする場合もございます）</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-reveal>
-          <button class="faq-question" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
-            <span>制作期間はどのくらいかかりますか？</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </button>
-          <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
-            <p>無料ブランド診断後、ブランドロードマップの合意を経て制作開始。最短2週間でサイト公開が可能です。ページ数や内容の複雑さによって変動する場合がございますので、診断時にご確認ください。</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FINAL CTA SECTION ===== -->
+  <!-- ===== 08 CTA ===== -->
   <section class="cta-section" id="cta-final">
     <div class="cta-bg">
       <div class="cta-orb cta-orb-1"></div>
@@ -850,66 +518,44 @@
     </div>
     <div class="container">
       <div class="cta-content">
-        <div class="cta-eyebrow">無料マルチチャネルブランド診断（30分）</div>
+        <div class="cta-eyebrow">08 — お問い合わせ・無料診断</div>
         <h2 class="cta-title">
-          あなたの発信を<br>
-          <span class="title-highlight">信頼に変える</span>ロードマップを、<br>
-          その場で描きます。
+          あなたの発信に、<br>
+          <span class="text-gradient">愛</span>を込めませんか。
         </h2>
         <p class="cta-desc">
           AIチャットボット×Googleカレンダー連携で、<strong>夜間でも30秒で日程調整が完了。</strong><br>
-          面倒なメールの往復は不要。カレンダーから選ぶだけで初回相談が確定します。<br>
-          まずはAItemaの実力を、予約システムで体感してください。
+          面倒なメールの往復は不要。まずは現状のお悩みをお聞かせください。<br>
+          「作って終わり」じゃない、次のステージへ。
         </p>
 
         <div class="cta-buttons">
           <a href="#" class="btn btn-cta-primary" id="cta-main-btn">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12 6 12 12 16 14"/>
-            </svg>
-            AIがその場で日程調整。<br class="sp-only">無料マルチチャネルブランド診断はこちら
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            AIがその場で日程調整。<br class="sp-only">無料ブランド診断はこちら
             <span class="btn-badge">30秒で予約完了</span>
           </a>
         </div>
 
         <div class="cta-features">
           <div class="cta-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>AIチャットだから、夜間でも30秒で予約が完結</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>完全無料・勧誘なし</span>
           </div>
           <div class="cta-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>日程調整メールの往復は不要、カレンダーから選ぶだけ</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>夜間でもAIチャットで30秒予約</span>
           </div>
           <div class="cta-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>完全無料、勧誘なし。まず現状を整理するだけでもOK</span>
-          </div>
-        </div>
-
-        <!-- Secondary CTA -->
-        <div class="cta-secondary">
-          <div class="cta-secondary-divider">
-            <span>または</span>
-          </div>
-          <div class="cta-secondary-content">
-            <p class="cta-secondary-title">📄 お役立ち資料ダウンロード（無料）</p>
-            <p class="cta-secondary-desc">『ブログ更新はもう古い？SNS時代の「1つにまとめる」公式ホームページ構築ガイド』</p>
-            <a href="#" class="btn btn-outline-light" id="cta-download-btn">無料ガイドをダウンロード</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>現状整理だけでもOK</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ===== 09 FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -917,12 +563,7 @@
           <div class="nav-logo footer-logo">
             <div class="logo-mark">
               <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#4F8EF7"/>
-                    <stop offset="100%" style="stop-color:#8B5CF6"/>
-                  </linearGradient>
-                </defs>
+                <defs><linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#4F8EF7"/><stop offset="100%" style="stop-color:#8B5CF6"/></linearGradient></defs>
                 <polygon points="20,4 36,12 36,28 20,36 4,28 4,12" fill="url(#logoGrad2)" opacity="0.15"/>
                 <polygon points="20,4 36,12 36,28 20,36 4,28 4,12" stroke="url(#logoGrad2)" stroke-width="2" fill="none"/>
                 <circle cx="20" cy="20" r="5" fill="url(#logoGrad2)"/>
@@ -930,20 +571,33 @@
             </div>
             <span class="logo-text">AI<span class="logo-accent">tema</span></span>
           </div>
-          <p class="footer-tagline">SNSの発信を「確かな信頼」に変える<br>AI活用ブランド最大化コンサルティング</p>
+          <p class="footer-tagline">愛があるから、手間をかける。<br>あなたのブランドを最大化する、AI活用WEB制作。</p>
+          <div class="footer-sns">
+            <a href="#" class="footer-sns-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="footer-sns-link" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.746-8.878-8.18-10.622h7.29l4.26 5.632 5.386-5.632Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer-sns-link" aria-label="note">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.5"/><line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="7" y1="12" x2="14" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
         </div>
         <div class="footer-links">
           <div class="footer-link-group">
-            <div class="footer-link-title">サービス</div>
-            <a href="#about" class="footer-link">サービスとは</a>
-            <a href="#features" class="footer-link">特徴・強み</a>
-            <a href="#pricing" class="footer-link">料金プラン</a>
-            <a href="#flow" class="footer-link">導入の流れ</a>
+            <div class="footer-link-title">コンテンツ</div>
+            <a href="#philosophy" class="footer-link">Philosophy</a>
+            <a href="#story" class="footer-link">Story</a>
+            <a href="#vision" class="footer-link">Vision</a>
+            <a href="#services" class="footer-link">Services</a>
+            <a href="#works" class="footer-link">Works</a>
+            <a href="#process" class="footer-link">Process</a>
           </div>
           <div class="footer-link-group">
-            <div class="footer-link-title">サポート</div>
-            <a href="#faq" class="footer-link">よくある質問</a>
+            <div class="footer-link-title">お問い合わせ</div>
             <a href="#cta-final" class="footer-link">無料ブランド診断</a>
+            <a href="#" class="footer-link">お問い合わせ</a>
           </div>
         </div>
       </div>

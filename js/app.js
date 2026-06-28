@@ -42,77 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ─── Video autoplay fallback ─────────────────────────────────
-  const heroVideo = document.getElementById('hero-video');
-  if (heroVideo) {
-    heroVideo.play().catch(() => {
-      // autoplay blocked — muted loop retry
-      heroVideo.muted = true;
-      heroVideo.play().catch(() => {});
+  [document.getElementById('hero-video'), document.getElementById('vision-video')].forEach(video => {
+    if (!video) return;
+    video.play().catch(() => {
+      video.muted = true;
+      video.play().catch(() => {});
     });
-  }
+  });
 
-  // ─── Typewriter animation ──────────────────────────────────────
-  // 改行位置を '\n' で指定（表示時に <br> に変換）
-  const LINES = [
-    '作って終わりの',
-    'ホームページは、',
-    'もういらない。',
-  ];
-  const FULL_TEXT  = LINES.join('\n');
-  const displayEl  = document.getElementById('typewriter-display');
-  const cursorEl   = document.getElementById('typewriter-cursor');
-
-  // Elements revealed after typing completes
-  const revealAfterType = [
+  // ─── Hero sub-elements: stagger fade-in on load ────────────────
+  // タイトル（#hero-title）はCSSアニメーションで浮かび上がる
+  // サブ要素はタイトルアニメーション完了後にスタガーで表示
+  const heroSubElements = [
     document.getElementById('hero-subtitle'),
     document.getElementById('hero-desc'),
     document.getElementById('hero-ctas'),
     document.getElementById('hero-proof'),
   ];
 
-  const BASE_SPEED    = 68;
-  const PAUSE_CHARS   = { '。': 400, '、': 240, '\n': 200 };
-  const INITIAL_DELAY = 700;
-
-  let charIndex = 0;
-
-  // 文字列を HTML 形式でレンダリング（\n → <br>）
-  function renderText(text) {
-    return text.split('\n').join('<br>');
-  }
-
-  function typeNextChar() {
-    if (charIndex >= FULL_TEXT.length) {
-      onTypingComplete();
-      return;
-    }
-
-    const char = FULL_TEXT[charIndex];
-    charIndex++;
-    displayEl.innerHTML = renderText(FULL_TEXT.slice(0, charIndex));
-
-    const delay = BASE_SPEED + (PAUSE_CHARS[char] ?? 0) + (Math.random() * 28 - 14);
-    setTimeout(typeNextChar, Math.max(18, delay));
-  }
-
-  function onTypingComplete() {
-    // カーソルは少し点滅した後に非表示
-    setTimeout(() => {
-      if (cursorEl) {
-        cursorEl.style.transition = 'opacity 0.4s ease';
-        cursorEl.style.opacity = '0';
-      }
-    }, 1200);
-
-    // サブ要素をスタガー表示
-    revealAfterType.forEach((el, i) => {
-      if (!el) return;
-      setTimeout(() => el.classList.add('visible'), 350 + i * 180);
-    });
-  }
-
-  // Kick off typing after initial delay
-  setTimeout(typeNextChar, INITIAL_DELAY);
+  heroSubElements.forEach((el, i) => {
+    if (!el) return;
+    // 2行目カットイン完了（0.72s delay + 0.88s duration ≈ 1.6s）後にスタガー
+    setTimeout(() => el.classList.add('visible'), 1680 + i * 180);
+  });
 
   // ─── Scroll Reveal ──────────────────────────────────────────
   const revealElements = document.querySelectorAll('[data-reveal]');
@@ -235,5 +187,5 @@ document.addEventListener('DOMContentLoaded', () => {
     footerCopy.textContent = footerCopy.textContent.replace('2025', new Date().getFullYear());
   }
 
-  console.log('%c🚀 AItema LP — Typewriter Ready', 'color:#4F8EF7;font-size:14px;font-weight:700;');
+  console.log('%c🚀 AItema LP — Ready', 'color:#4F8EF7;font-size:14px;font-weight:700;');
 });
