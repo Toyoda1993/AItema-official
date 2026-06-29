@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo's Cafe | DEMO'S FILL YOUR BODY WITH JOY.</title>
+  <meta name="description" content="スイーツ・タピオカドリンク・パンケーキのカフェチェーン。ワタシも、ココロほどける至福の時間">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+</head>
+<body>
+
+  <!-- ===== プリローダー ===== -->
+  <div id="preloader">
+    <svg class="preloader-svg" viewBox="0 0 900 210" xmlns="http://www.w3.org/2000/svg">
+      <text class="preloader-text" x="50%" y="78%" text-anchor="middle"
+            font-family="'Dancing Script', cursive" font-size="168" font-weight="700">
+        Demo's Cafe
+      </text>
+    </svg>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Demo's Cafe</a>
+      <ul class="nav-links">
+        <li class="nav-close-item">
+          <button class="nav-close-btn" id="menu-close-btn" aria-label="メニューを閉じる">✕</button>
+        </li>
+        <li><a href="#" class="nav-link">TOP</a></li>
+        <li><a href="#concept" class="nav-link">ABOUT</a></li>
+        <li><a href="#product" class="nav-link">BRAND MENU</a></li>
+        <li><a href="#news" class="nav-link">NEWS</a></li>
+        <li><a href="#shop" class="nav-link">SHOP</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://www.instagram.com/" class="nav-instagram" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-logo-center">
+      <svg class="hero-logo-svg" viewBox="0 0 900 210" xmlns="http://www.w3.org/2000/svg">
+        <text class="hero-logo-text" x="50%" y="78%" text-anchor="middle"
+              font-family="'Dancing Script', cursive" font-size="168" font-weight="700">
+          Demo's Cafe
+        </text>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">SWEETS &amp; DRINKS</p>
+      <h1 class="hero-title">TIME TO UNWIND<br>AND RESET ME</h1>
+      <p class="hero-sub">ワタシも、ココロほどける至福の時間</p>
+      <a href="#product" class="btn btn-primary">BRAND MENU →</a>
+    </div>
+  </section>
+
+  <!-- ===== CONCEPT ===== -->
+  <section class="concept" id="concept">
+    <div class="container">
+      <p class="section-label">CONCEPT</p>
+      <div class="concept-accent-line"></div>
+      <div class="concept-body">
+        <p>
+          安心して過ごせる時間。<br>
+          職人の手仕事が生み出すおいしさを、<br>
+          あなたの日常にお届けしたい。
+        </p>
+        <p>
+          Demo's Cafe は「ちょっと贅沢」をテーマに、<br>
+          食べる人の笑顔を想いながら、<br>
+          一品一品を丁寧につくり続けています。<br>
+          国産の素材を厳選し、心を込めてお作りします。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT ===== -->
+  <section class="products" id="product">
+    <div class="section-header container">
+      <p class="section-label">BRAND MENU</p>
+    </div>
+
+    <!-- Pancake -->
+    <div class="product-block product-block--left fade-in">
+      <div class="product-image-wrap">
+        <img src="assets/images/cafe-pancake.webp" alt="とろける天使のパンケーキ" class="product-image">
+        <div class="product-accent-rect"></div>
+      </div>
+      <div class="product-body">
+        <p class="product-name-en">Pancake</p>
+        <h3 class="product-name-ja">とろける天使のパンケーキ</h3>
+        <p class="product-copy">ふわっと広がる、一口で幸せ気分。</p>
+        <p class="product-desc">しっとりとした生地にたっぷりの生クリームをのせた、とろける天使のパンケーキ。<br>安心して召し上がっていただきたくて、国産素材にこだわり店内で調理しております。</p>
+      </div>
+    </div>
+
+    <!-- Tapioca -->
+    <div class="product-block product-block--right fade-in">
+      <div class="product-image-wrap">
+        <img src="assets/images/cafe-tapioca.webp" alt="Demo's 自家製タピオカ" class="product-image">
+        <div class="product-accent-rect"></div>
+      </div>
+      <div class="product-body">
+        <p class="product-name-en">Tapioca</p>
+        <h3 class="product-name-ja">Demo's 自家製タピオカ</h3>
+        <p class="product-copy">毎日仕込む、本物のもちもちを。</p>
+        <p class="product-desc">職人が毎日仕込む自家製タピオカ。<br>
+          沖縄県産のさとうきびを使用したやさしい甘さと<br>
+          もちもちの食感をご堪能ください。</p>
+      </div>
+    </div>
+
+    <!-- わらび餅 -->
+    <div class="product-block product-block--left fade-in">
+      <div class="product-image-wrap">
+        <img src="assets/images/cafe-warabi.webp" alt="わらび餅" class="product-image">
+        <div class="product-accent-rect"></div>
+      </div>
+      <div class="product-body">
+        <p class="product-name-en">Warabi Mochi</p>
+        <h3 class="product-name-ja">わらび餅</h3>
+        <p class="product-copy">とろける食感、やさしい甘さ。</p>
+        <p class="product-desc">もっちりとした口どけのわらび餅に、たっぷりのきな粉と黒蜜をかけた和スイーツ。</p>
+      </div>
+    </div>
+
+    <!-- レモネード -->
+    <div class="product-block product-block--right fade-in">
+      <div class="product-image-wrap">
+        <img src="assets/images/cafe-lemonade.webp" alt="レモネード" class="product-image">
+        <div class="product-accent-rect"></div>
+      </div>
+      <div class="product-body">
+        <p class="product-name-en">Lemonade</p>
+        <h3 class="product-name-ja">レモネード</h3>
+        <p class="product-copy">酸味と甘さ、絶妙なハーモニー。</p>
+        <p class="product-desc">爽やかな酸味と蜂蜜の甘さが絶妙なバランス。<br>
+          色とりどりのゼリーも見た目が映えると大人気。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram CTA -->
+  <div class="instagram-cta fade-in">
+    <a href="https://www.instagram.com/" class="btn btn-instagram" target="_blank" rel="noopener">
+      <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      Instagramをフォローする
+    </a>
+  </div>
+
+  <!-- ===== NEWS ===== -->
+  <section class="news" id="news">
+    <div class="container">
+      <p class="section-label">NEWS</p>
+      <ul class="news-list">
+        <li class="news-item fade-in">
+          <time class="news-date">2026.06.29</time>
+          <span class="news-tag">NEW ITEM</span>
+          <p class="news-title">夏季限定「とろける天使のパンケーキ」マンゴーソースが新登場</p>
+        </li>
+        <li class="news-item fade-in">
+          <time class="news-date">2026.06.15</time>
+          <span class="news-tag">SHOP INFO</span>
+          <p class="news-title">休業日のお知らせ</p>
+        </li>
+        <li class="news-item fade-in">
+          <time class="news-date">2026.05.28</time>
+          <span class="news-tag">CAMPAIGN</span>
+          <p class="news-title">公式LINE登録でドリンク1杯無料クーポン実施中！</p>
+        </li>
+        <li class="news-item fade-in">
+          <time class="news-date">2026.05.10</time>
+          <span class="news-tag">MEDIA</span>
+          <p class="news-title">雑誌「〇〇」6月号に当店が掲載されました</p>
+        </li>
+        <li class="news-item fade-in">
+          <time class="news-date">2026.04.20</time>
+          <span class="news-tag">EVENT</span>
+          <p class="news-title">デモサイトとして公開しております！</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== SHOP ===== -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <p class="section-label">SHOP</p>
+    </div>
+    <div class="shop-image fade-in">
+      <img src="assets/images/cafe-shop.webp" alt="Demo's Cafe 店舗" class="shop-img">
+    </div>
+    <div class="shop-map fade-in">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827957031696!2d139.76454315!3d35.68124052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1751000000000!5m2!1sja!2sjp"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Demo's Cafe 店舗MAP（東京駅）">
+      </iframe>
+    </div>
+    <div class="container shop-info fade-in">
+      <table class="shop-table">
+        <tbody>
+          <tr>
+            <th>店舗名</th>
+            <td>Demo's Cafe</td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>〒100-0000 東京都千代田区丸の内○丁目</td>
+          </tr>
+          <tr>
+            <th>TEL</th>
+            <td>03-XXXX-XXXX</td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>10:00〜21:00（L.O. 20:30）</td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>不定休</td>
+          </tr>
+          <tr>
+            <th>アクセス</th>
+            <td>JR東京駅 丸の内南口より徒歩○分</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container shop-cta fade-in">
+      <a href="#" class="btn btn-outline">SHOP LIST →</a>
+    </div>
+  </section>
+
+  <!-- ===== WEB PRODUCTION PR / CONTACT ===== -->
+  <section class="fc-contact" id="fc">
+    <div class="container">
+      <div class="fc-contact-grid">
+        <div class="fc-block fade-in">
+          <p class="section-label">WEB PRODUCTION</p>
+          <h3 class="fc-title">一緒に、<br>貴社のブランドを<br>育てませんか。</h3>
+          <p class="fc-desc">このデモサイトは、ブランドの世界観をウェブで体現するとどう見えるかを体感いただくために制作しました。AItemaでは、貴社のブランドイメージに合ったホームページ・LPの企画・制作を承っています。</p>
+          <a href="../#services" class="btn btn-outline" target="_blank" rel="noopener">サービスを見る →</a>
+        </div>
+        <div class="contact-block fade-in" id="contact">
+          <p class="section-label">CONTACT</p>
+          <h3 class="contact-title">まずは、<br>お気軽にご相談ください。</h3>
+          <p class="contact-desc">「こんなサイトを作りたい」「ブランドの見せ方を変えたい」など、どんな段階のご相談でも大歓迎です。初回のご相談は無料で承っています。</p>
+          <a href="../#cta-final" class="btn btn-primary" target="_blank" rel="noopener">無料相談を予約する →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">Demo's Cafe</p>
+        <nav class="footer-nav">
+          <a href="#">TOP</a>
+          <a href="#product">BRAND MENU</a>
+          <a href="#shop">SHOP</a>
+          <a href="#concept">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+        <a href="https://www.instagram.com/" class="footer-instagram" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; Demo's Cafe All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
