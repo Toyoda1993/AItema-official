@@ -1,3 +1,14 @@
+/* --vh fix: アドレスバー表示/非表示によるリサイズを防ぐ */
+(function () {
+  function setVH() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  }
+  setVH();
+  window.addEventListener('orientationchange', function () {
+    setTimeout(setVH, 100);
+  });
+})();
+
 /* ===== プリローダー ===== */
 // タイミング: delay 0.4s + stroke 1.8s + fill 0.5s + pause 0.3s = 3.0s
 const preloader = document.getElementById('preloader');

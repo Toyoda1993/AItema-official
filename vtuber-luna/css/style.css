@@ -332,6 +332,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   height: 100vh;
   height: 100svh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 640px;
   overflow: hidden;
 }

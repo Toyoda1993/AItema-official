@@ -331,6 +331,7 @@ ul { list-style: none; }
   width: 100%;
   height: 100vh;
   height: 100svh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 600px;
   background-color: var(--color-mint-deep);
   background-image: url('../assets/images/cafe-hero.webp');

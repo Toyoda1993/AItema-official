@@ -1,3 +1,14 @@
+/* --vh fix: アドレスバー表示/非表示によるリサイズを防ぐ */
+(function () {
+  function setVH() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  }
+  setVH();
+  window.addEventListener('orientationchange', function () {
+    setTimeout(setVH, 100);
+  });
+})();
+
 /* ===== ローディング画面 ===== */
 const loadingScreen = document.getElementById('loading-screen');
 const loaderBar = document.getElementById('loader-bar');
