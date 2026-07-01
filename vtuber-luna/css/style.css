@@ -331,6 +331,7 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative;
   height: 100vh;
+  height: 100svh;
   min-height: 640px;
   overflow: hidden;
 }

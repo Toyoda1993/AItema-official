@@ -1758,7 +1758,7 @@ ul { list-style: none; }
   }
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .hero { min-height: 100dvh; }
+  .hero { min-height: 100svh; }
   .hero-title { font-size: clamp(30px, 8vw, 52px); }
   /* Philosophy */
   .philosophy-block { padding: 48px 0; }
